@@ -360,10 +360,17 @@ button:hover {
     color: #fff;
 }
 
-
 /* Left & Right Post */
 
 .right-image-post {
+    display: table;
+    margin-top: 60px;
+    padding-top: 60px;
+    border-top: 2px solid rgba(250, 250, 250, 0.1);
+}
+
+.left-image-post {
+    display: table;
     margin-top: 60px;
     padding-top: 60px;
     border-top: 2px solid rgba(250, 250, 250, 0.1);
@@ -389,6 +396,31 @@ button:hover {
     margin-top: 30px;
 }
 
+.col-image-post {
+    width: 100%;
+    max-width: 50%;
+    display: table-cell;
+    box-sizing: border-box;
+}
+
+.slide {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: block;
+}
+
+.video-wrapper {
+    width: 100%;
+	padding-bottom: 56.25%; /* 16:9 */
+	position: relative;
+}
+
+.video-wrapper > iframe
+{
+    position: absolute;
+	top: 0; bottom: 0; left: 0; right: 0;
+}
 
 /* Services */
 
