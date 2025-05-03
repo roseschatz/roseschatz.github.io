@@ -44,13 +44,16 @@ https://templatemo.com/tm-531-reflux
             </div>
             <div class="author-content">
               <h4>Rose Schatz</h4>
-              <span>Technical Designer</span>
+              <span>
+                Gameplay Programmer<br>
+                Technical Designer
+              </span>
             </div>
             <nav class="main-nav" role="navigation">
               <ul class="main-menu">
-                <li><a href="#section1">About Me</a></li>
-                <li><a href="#section2">What I’m good at</a></li>
-                <li><a href="#section3">My Work</a></li>
+                <li><a href="#section1">My Projects</a></li>
+                <!--<li><a href="#section2">What I’m good at</a></li>
+                <li><a href="#section3">My Work</a></li>-->
                 <li><a href="#section4">Contact Me</a></li>
               </ul>
             </nav>
@@ -71,82 +74,90 @@ https://templatemo.com/tm-531-reflux
       <section class="section about-me" data-section="section1">
         <div class="container">
           <div class="section-heading">
-            <h2>About Me</h2>
+            <h2>My Projects</h2>
             <div class="line-dec"></div>
-            <span
-              >This is a Bootstrap v4.2.1 CSS Template for you. Edit and use
-              this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.</span
-            >
+            <!--<span>
+              This is a Bootstrap v4.2.1 CSS Template for you. Edit and use
+              this layout for your site. Updated on 21 May 2019 for repeated main menu HTML code.
+            </span>-->
           </div>
           <div class="left-image-post">
+            <div class="col-image-post">
+              <div class="slide1 slide video-wrapper">
+                <iframe style="width:100%;height:100%;display:block" src="https://www.youtube.com/embed/CKkXO-xdswY?si=AdGs4vehYmlXnHEO" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <img class="slide1 slide" src="assets/images/KnightLight1.png" style="width:100%;display:none">
+              <img class="slide1 slide" src="assets/images/KnightLight2.png" style="width:100%;display:none">
             
-              <div class="col-image-post">
-                <div class="slide video-wrapper">
-                  <iframe style="width:100%;height:100%;display:block" src="https://www.youtube.com/embed/CKkXO-xdswY?si=AdGs4vehYmlXnHEO" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+              <div class="w3-row-padding w3-section">
+                <div class="w3-col s4">
+                  <img class="slide1thumbnail w3-opacity w3-hover-opacity-off" src="assets/images/KnightLight0.png" style="width:100%;cursor:pointer" onclick="currentDiv(1, 'slide1')">
                 </div>
-                <img class="slide" src="assets/images/KnightLight1.png" style="width:100%;display:none">
-                <img class="slide" src="assets/images/KnightLight2.png" style="width:100%;display:none">
-              
-                <div class="w3-row-padding w3-section">
-                  <div class="w3-col s4">
-                    <img class="demo w3-opacity w3-hover-opacity-off" src="assets/images/KnightLight0.png" style="width:100%;cursor:pointer" onclick="currentDiv(1)">
-                  </div>
-                  <div class="w3-col s4">
-                    <img class="demo w3-opacity w3-hover-opacity-off" src="assets/images/KnightLight1.png" style="width:100%;cursor:pointer" onclick="currentDiv(2)">
-                  </div>
-                  <div class="w3-col s4">
-                    <img class="demo w3-opacity w3-hover-opacity-off" src="assets/images/KnightLight2.png" style="width:100%;cursor:pointer" onclick="currentDiv(3)">
-                  </div>
+                <div class="w3-col s4">
+                  <img class="slide1thumbnail w3-opacity w3-hover-opacity-off" src="assets/images/KnightLight1.png" style="width:100%;cursor:pointer" onclick="currentDiv(2, 'slide1')">
                 </div>
-              </div>
-              <div class="col-image-post">
-                <div class="right-text">
-                  <h3>Knight Light</h3>
-                  <h5>Technical Director</h5>
-                  <p>
-                    Donec tristique feugiat lacus, at sollicitudin nunc euismod
-                    sed. Mauris viverra, erat non sagittis gravida, elit dui
-                    mollis ante, sit amet eleifend purus ligula eget eros. Sed
-                    tincidunt quam vitae neque pharetra dignissim eget ut
-                    libero.
-                  </p>
-                  <div class="white-button">
-                    <a href="#">Read More</a>
-                  </div>
-                </div>
-              </div>
-            
-          </div>
-          <iframe src="https://store.steampowered.com/widget/3560620/" frameborder="0" style="width:100%;margin-top:1.4%" height="190"></iframe>
-          
-          <div class="right-image-post">
-            <div class="row">
-              <div class="col-md-6">
-                <div class="left-text">
-                  <h4>Sed sagittis rhoncus velit</h4>
-                  <p>
-                    Pellentesque habitant morbi tristique senectus et netus et
-                    malesuada fames ac turpis egestas. Vestibulum fermentum
-                    eleifend nibh, vitae sodales elit finibus pretium.
-                    Suspendisse potenti. Ut sollicitudin risus a sollicitudin
-                    semper.
-                  </p>
-                  <div class="white-button">
-                    <a href="#">Read More</a>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-6">
-                <div class="right-image">
-                  <img src="assets/images/right-image.jpg" alt="" />
+                <div class="w3-col s4">
+                  <img class="slide1thumbnail w3-opacity w3-hover-opacity-off" src="assets/images/KnightLight2.png" style="width:100%;cursor:pointer" onclick="currentDiv(3, 'slide1')">
                 </div>
               </div>
             </div>
+            <div class="col-image-post">
+              <div class="right-text">
+                <h3>Knight Light</h3>
+                <h5>Student Project | Technical Director</h5>
+                <p>
+                  Knight Light was made in Unreal Engine 5.2 for PC. After most of the original programming team left the project I stepped in and worked with a team of four other programmers to completely rebuild (or salvage) all of the systems left in the project. I worked on a plan spanning four months that involved completely rebuilding enemy AI, combat, player abilities, gameplay events, UI, and more. I worked with my team to quickly analyze and break down all of the systems left behind from the first eight months of the project and then make a plan for the systems that needed to be touched up and the systems that needed to be fully replaced. In addition to tech direction I created the modular event system that the project uses to coordinate activation and deactivation of gameplay and decorative elements in a way that allows for complex events to be easily scripted in-editor. I also created the enemy wave system with several coordination & spawning options that could be easily arranged by designers in data tables.
+                </p>
+                <!--<div class="white-button">
+                  <a href="#">Read More</a>
+                </div>-->
+              </div>
+            </div>
           </div>
+          <iframe src="https://store.steampowered.com/widget/3560620/" frameborder="0" style="width:100%;margin-top:1.4%" height="190"></iframe>
+          
+          <div class="left-image-post">
+            <div class="col-image-post">
+              <div class="slide2 slide video-wrapper">
+                <iframe style="width:100%;height:100%;display:block" src="https://www.youtube.com/embed/EdwgfwaRfzU?si=AK8XXZ4fc3cfPRDR" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+              </div>
+              <img class="slide2 slide" src="assets/images/SIR1.png" style="width:100%;display:none">
+              <img class="slide2 slide" src="assets/images/SIR2.png" style="width:100%;display:none">
+            
+              <div class="w3-row-padding w3-section">
+                <div class="w3-col s4">
+                  <img class="slide2thumbnail w3-opacity w3-hover-opacity-off" src="assets/images/SIR0.png" style="width:100%;cursor:pointer" onclick="currentDiv(1, 'slide2')">
+                </div>
+                <div class="w3-col s4">
+                  <img class="slide2thumbnail w3-opacity w3-hover-opacity-off" src="assets/images/SIR1.png" style="width:100%;cursor:pointer" onclick="currentDiv(2, 'slide2')">
+                </div>
+                <div class="w3-col s4">
+                  <img class="slide2thumbnail w3-opacity w3-hover-opacity-off" src="assets/images/SIR2.png" style="width:100%;cursor:pointer" onclick="currentDiv(3, 'slide2')">
+                </div>
+              </div>
+            </div>
+            <div class="col-image-post">
+              <div class="right-text">
+                <h3>Stardust In Retrograde</h3>
+                <h5>Student Project | Gameplay Programmer</h5>
+                <p>
+                  Stardust in Retrograde was made in Unreal Engine 5.2 by a team of 17 that included programmers, artists, game designers, and a sound designer. I implemented a simple event system that made it easy to quickly assemble encounters and simple puzzles. The event system included custom visual debugging that made it easy to see the control flow of interactables and encounters in the world. I integrated Wwise into the project and worked closely with our sound designer to implement SFX and music in our game. I also worked closely with our artists to create a polished animation controller for the player and props.
+                </p>
+                <!--<div class="white-button">
+                  <a href="#">Read More</a>
+                </div>-->
+              </div>
+            </div>
+          </div>
+          
+
+
+
+
         </div>
       </section>
 
-      <section class="section my-services" data-section="section2">
+      <!--<section class="section my-services" data-section="section2">
         <div class="container">
           <div class="section-heading">
             <h2>What I’m good at?</h2>
@@ -204,8 +215,8 @@ https://templatemo.com/tm-531-reflux
             </div>
           </div>
         </div>
-      </section>
-
+      </section>-->
+      <!--
       <section class="section my-work" data-section="section3">
         <div class="container">
           <div class="section-heading">
@@ -372,21 +383,26 @@ https://templatemo.com/tm-531-reflux
             </div>
           </div>
         </div>
-      </section>
+      </section>-->
 
       <section class="section contact-me" data-section="section4">
         <div class="container">
           <div class="section-heading">
             <h2>Contact Me</h2>
             <div class="line-dec"></div>
-            <span
-              >Fusce eget nibh nec justo interdum condimentum. Morbi justo ex,
+            <!--<span>
+              Fusce eget nibh nec justo interdum condimentum. Morbi justo ex,
               efficitur at ante ac, tincidunt maximus ligula. Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit.</span
-            >
+              sit amet, consectetur adipiscing elit.
+            </span>-->
           </div>
           <div class="row">
-            <div class="right-content">
+            <span>
+              LinkedIn: <a href="https://www.linkedin.com/in/rose-schatz/">linkedin.com/in/rose-schatz</a>
+              <br>
+              Email: roseschatz02@gmail.com
+            </span>
+            <!--<div class="right-content">
               <div class="container">
                 <form id="contact" action="" method="post">
                   <div class="row">
@@ -448,7 +464,7 @@ https://templatemo.com/tm-531-reflux
                   </div>
                 </form>
               </div>
-            </div>
+            </div>-->
           </div>
         </div>
       </section>

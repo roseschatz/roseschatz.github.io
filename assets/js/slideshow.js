@@ -1,11 +1,11 @@
-function currentDiv(n) {
-  showDivs(slideIndex = n);
+function currentDiv(n, name) {
+  showDivs(slideIndex = n, name);
 }
 
-function showDivs(n) {
+function showDivs(n, name) {
   var i;
-  var x = document.getElementsByClassName("slide");
-  var dots = document.getElementsByClassName("demo");
+  var x = document.getElementsByClassName(name);
+  var dots = document.getElementsByClassName(name + "thumbnail");
   if (n > x.length) {slideIndex = 1}
   if (n < 1) {slideIndex = x.length}
   for (i = 0; i < x.length; i++) {
